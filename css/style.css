@@ -1,0 +1,592 @@
+/* ここから下に記載していく */
+
+/* 全体管理用 */
+
+.all {
+  width: 1200px;
+  margin-top: 124px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #222222;
+}
+
+/* 見出しフォントhの調整 */
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  }
+h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+/* テキスト全体 */
+p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+/* 一部テキストの見出し */
+.title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* 一部テキストの本文 */
+  .text {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 70px;
+    margin-bottom: 50px;
+  }
+
+/* 余白 */
+.gray15 {
+  height: 15px;
+}
+.gray30 {
+  height: 30px;
+}
+.gray60 {
+  width: 1200px;
+  height: 60px;
+}
+
+
+/* TOPボタン */
+#page-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  background: #fff;
+  color: #737373;
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px -6px rgb(0 0 0 / 50%), 0 3px 10px -4px rgb(0 0 0 / 20%);
+}
+
+
+/* ヘッダー */
+
+.header__nav {
+ display: flex;
+}
+  .header__nav li {
+    margin-left: 30px;
+    margin-right: 30px;
+    border-bottom: 2px solid #2b2c26;
+  }
+    .header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+.logo {
+  padding-right: 40px;
+}
+
+/* トップ絵 */
+.mainV {
+  height: 500px;
+  background: url("../img/cheeze.gif");
+  background-position: center;
+  /* background-repeat: no-repeat; */
+}
+
+
+  .mainV__title {
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow:
+      5px 0 0 rgb(200, 239, 93),
+      0 5px 0  rgb(200, 239, 93),
+      -5px 0 0  rgb(200, 239, 93),
+      0 -5px 0  rgb(200, 239, 93);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 140px;
+  }
+    .mainV__subtitle {
+      font-size: 30px;
+      font-weight: bold;
+      text-shadow:
+        5px 0 0 rgb(200, 239, 93),
+        0 5px 0  rgb(200, 239, 93),
+        -5px 0 0  rgb(200, 239, 93),
+        0 -5px 0  rgb(200, 239, 93);
+      color: black;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+
+/* アバウトの管理 */
+.box01 {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+  .box01 h1 {
+    color: #1aff5b;
+  }
+
+/* スライダーの管理 */
+
+.slider {
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+    /* はみ出し部分を隠す的な処理 */
+  margin: 0 auto;
+}
+  .slider-item {
+    width: 800px;
+    float: left;
+  }
+    img {
+      width:100%;
+      text-align : center 
+    }
+      .slider-inner {
+        width: 2400%;
+        animation: slider 15s infinite ease;
+      }
+        @keyframes slider {
+	        0% {
+	          transform: translateX(0);
+	        }
+	        25% {
+	          transform: translateX(-800px);
+	        }
+	        50% {
+	          transform: translateX(-1600px);
+	        }
+	        75% {
+	          transform: translateX(-2400px);
+	        }
+          100%{
+            transform: translateX(0px);
+          }
+        }
+          /* スライダーの幅を800にしている */
+          /* スライダーアイテムも800。画像自体は100％表示 */
+          /* スライダーの移動率を800px毎に指定してやる */
+
+/* コースの管理 */
+
+.course {
+  margin: 50px 0;
+}
+  .course .box {
+    margin-top: 50px;
+  }
+    .course__inner {
+      display: flex;
+    }
+      .course__content {
+        width: 50%;
+        display: flex;
+        align-items: center;
+      }
+        .course__content img {
+          width: 100%;
+          vertical-align: top;
+        }
+          .content__title03 {
+            width: 100%;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-align: center;
+          }
+            .content__text03 {
+              width: 100%;
+            }
+              .content__Left {
+                width: 70%;
+                margin-left: 50px;
+              }
+              .course__content__right {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: right;
+              }
+              .content__right {
+                width: 80%;
+                margin-right: 50px;
+              }
+              .course h1 {
+                color: #1aff5b;
+              }
+              
+      .course__content02 {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        background: url("../img/course_b02.jpg") no-repeat;
+      }
+
+.box05 {
+  margin: 60px auto;
+}
+
+/* 右に文章・左に画像の処理 */
+.box03 {
+  width: 1200px;
+  height: 460px;
+  display: flex;
+  justify-content: center;
+}
+  /* 二つ指定してから｛｝で条件を細かく指定できるっぽい(先人のチーズより) */
+  .box03 .left {
+    width: 600px;
+    height: 450px;
+    margin: 0 auto;;
+  }
+    .box03 .right {
+      width: 600px;
+      height: 450px;
+      margin: 0 auto;
+    }
+      .box03 .title {
+        font-weight: bold;
+        font-size: 30px;
+        padding-top: 80px;
+        padding-left: 80px;
+        padding-bottom: 40px;
+      }
+        .box03 .text {
+          font-size: 20px;
+          padding-left: 80px;
+          padding-bottom: 40px;
+        }
+
+/* 左に文章・右に画像の処理 */
+.box06 {
+  width: 1200px;
+  height: 460px;
+  display: flex;
+  justify-content: center;
+}
+  .box06 .right {
+    width: 600px;
+    height: 450px;
+    margin: 0 auto;;
+  }
+    .box06 .left {
+      width: 600px;
+      height: 450px;
+      margin: 0 auto;
+    }
+      .box06 .title {
+        font-weight: bold;
+        font-size: 30px;
+        padding-top: 80px;
+        padding-right: 80px;
+        padding-bottom: 40px;
+      }
+        .box06 .text {
+          font-size: 20px;
+          padding-right: 30px;
+          padding-bottom: 40px;
+        }
+
+/* インストラクターの管理 */
+
+.box04 {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+.box04 h1 {
+  color: #1aff5b;
+}
+/* NEWSの管理 */
+.box10 {
+  width: 960px;
+  /* height: 400px; */
+  /* border: solid black 1px; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+  .box10 .nbox .btm {
+    margin-top: 30px;
+  }
+    .box10 h3 {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+      .box10 .nbox .tp {
+        width: 300px;
+        height: 200px;
+      }
+        .box10 p {
+          text-align: left;
+          padding-right: 5%;
+        }
+
+.button001 a {
+  /* border-radius: 3px; */
+  border: 3px solid #ab8b00;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 280px;
+  padding: 10px 25px;
+  color: #000000;
+  transition: 0.3s ease-in-out;
+    /* transitionで2つの状態への移行管理できる */
+    /* saseinで徐々に加速。outで徐々に減速 */
+  font-weight: 500;
+    /* 文字－重さつまり太さ */
+}
+  /* マウスカーソルを置いて全体の色を変化 hoverがマウスカーソルで要素に触れた時の管理 */
+  .button001 a:hover {
+    background: #313131;
+    color:rgb(255, 255, 255);
+  }
+    /* 矢印部分の管理 */
+    .button001 a:after {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-top: 3px solid #313131;
+      border-right: 3px solid #313131;
+      transform: rotate(45deg) translateY(-50%);
+        /* rotateとtranslateYで矢印の羽を表現している */
+        /* rotateで角度の調整 */
+        /* translateYは横要素の位置調整 */
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      border-radius: 1px;
+      transition: 0.3s ease-in-out;
+    }
+    /* hoverの際のafter */
+      .button001 a:hover:after {
+        border-color: rgb(255, 255, 255);
+      }
+
+  
+
+
+/* ACEESS関係 */
+.box08 .prop {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+  .map {
+      width: 100%;
+      position: relative;
+      padding-top: 40%;
+    }
+      .map iframe {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      
+/* 問い合わせフォームコピペから削る */
+
+      /* 問い合わせフォーム全体管理 */
+.box_con07 {
+  max-width: 900px;
+  margin: 0  auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .box_con07 {
+    width: 95%;
+  }
+}
+  .box_con07 form {
+    width: 100%;
+  }
+    .box_con07 form ul {
+      width: 100%;
+    }
+      .box_con07 form ul li {
+        position: relative;
+        overflow: hidden;
+        margin: .5em 0;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      
+@media only screen and (min-width: 769px) {
+  .box_con07 form ul li {
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+@media print {
+  .box_con07 form ul li {
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+.ie8 .box_con07 form ul li {
+  display: -webkit-flex;
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .box_con07 form ul li {
+    margin: 1em 0;
+  }
+}
+.box_con07 form ul li .title02 {
+  position: relative;
+  width: 30%;
+  font-weight: normal;
+  padding: 1em;
+  position: relative;
+  color: #1c2e53;
+}
+/* 文字を揃える */
+@media only screen and (min-width: 769px) {
+  .box_con07 form ul li .title02 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+@media print {
+  .box_con07 form ul li .title02 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+
+/* 必須の部分 */
+.box_con07 form ul li .title02 span {
+  background: #cd6f55;
+  padding: 0 .3em;
+  color: #fff;
+  margin-left: .5em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 記入フォームの枠線 */
+.box_con07 form ul li .box_det {
+  width: 70%;
+  position: relative;
+  padding: 1em;
+  border-bottom: 1px solid #000;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* 記入フォームの箱の大きさに関連 */
+/* box_br で選択肢を縦に並べている */
+.box_con07 form ul li .box_br {
+  display: block;
+}
+/* textareaで選択肢枠の大きさの管理 */
+.box_con07 form ul li select, .box_con07 form ul li textarea, .box_con07 form ul li .wide {
+  width: 100%;
+  height: 3em;
+  padding: .5em;
+  border: none;
+  outline: none;
+  background: transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.box_con07 form ul li textarea {
+  height: 10em;
+}
+  
+/* 送信ボタン */
+  /* text-align:centerでダメならmarginで調整 0(先)が上下　auto(後ろ)が左右 */
+
+.button002 a {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 280px;
+  padding: 10px 25px;
+  background: rgb(255, 166, 0);
+  color: #ffffff;
+}
+  /* マウスカーソルを置いて全体の色を変化 hoverがマウスカーソルで要素に触れた時の管理 */
+  .button002 a:hover {
+    background: #313131;
+    color:rgb(0, 255, 55);
+  }
+
+/* フッター */
+.boxA {
+margin-top: 140px;
+background-color: yellow;
+}
+.yellow30 {
+height: 30px;
+}
+
+body{
+  position: relative;
+  /* cursor: none;  もともとあるカーソルは見えなくなるようにする */
+}
+#cursor{
+  position: fixed;
+  /*丸の大きさと色の指定*/
+  border-radius:20px;
+  width: 80px;
+  height: 80px;
+  margin: -20px 0 0 -20px;/*真ん中にくるようにマイナスマージンで調整*/
+  z-index: 2;/*一番手前に来るように*/
+  pointer-events: none;/*クリックできなくなるのを防ぐため。noneで対応*/
+  opacity: 0;
+}
+
+/*ちょっと遅れてついてくるストーカー要素*/
+#stalker{
+  position: fixed;
+  /*丸の大きさと色の指定*/
+  width: 60px;
+  height: 60px;
+  border-radius:30px;
+  margin: -30px 0 0 -30px;/*真ん中にくるようにマイナスマージンで調整*/
+  z-index: 1;/*カーソルの後ろに来るように*/
+  pointer-events: none;/*クリックできなくなるのを防ぐため。noneで対応*/
+  opacity: 0;
+}
+
+.section {
+  visibility: hidden;
+}
+
+
+.boxB {
+  visibility: hidden;
+}
+
+.uranai {
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 280px;
+  padding: 10px 25px;
+}
